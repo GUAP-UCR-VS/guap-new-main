@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "title": "<img class=\"logo \" src=\"img/guap.png\" alt=\"\">"
         },
         "offCanvas": {
-            "position": "left-front"
+            position: "left-front"
         },
         "theme": "white",
         "navbars": [
@@ -91,5 +91,5 @@ document.addEventListener('DOMContentLoaded', function () {
                 ]
             }
         ]
-    });
+    }, {});
 })

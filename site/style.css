@@ -5,6 +5,10 @@
     line-height: normal;
 }
 
+body{
+    will-change: reset;
+}
+
 a {
     color: #005aaa;
     text-decoration: none;
@@ -194,7 +198,7 @@ a {
     padding: 0;
     width: 10em;
     font-family: 'Roboto', sans-serif;
-    font-size: 2.3vw;
+    font-size: 3.5vw;
     line-height: 1em;
     font-weight: bold;
     text-transform: uppercase;
@@ -209,7 +213,7 @@ a {
     border: solid 2px #fff;
     border-radius: 2em;
     text-transform: uppercase;
-    font-size: 1.15vw;
+    font-size: 2vw;
     font-weight: bold;
     color: #fff;
 
@@ -951,3 +955,8 @@ li {
         border-bottom: 2px solid #005aaa;
     }
 }
+
+#menu:not( .mm-menu ) {
+    display: none;
+}
+
