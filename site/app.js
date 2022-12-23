@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     new Mmenu("#menu", {
         "navbar": {
-            "title": "<img class=\"logo \" src=\"img/guap.png\" alt=\"\">"
+            "title": "<div class='navbar-brand'><img class=\"logo \" src=\"https://src.guap.ru/images/guap_new_year.svg\" alt=\"\"></div>"
         },
         "offCanvas": {
             position: "left-front"
