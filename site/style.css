@@ -5,7 +5,7 @@
     line-height: normal;
 }
 
-body{
+body {
     will-change: reset;
 }
 
@@ -14,14 +14,63 @@ a {
     text-decoration: none;
 }
 
+#page {
+    overflow: hidden;
+}
+
 .logo {
-    width: 98px;
-    height: 38px;
+    height: 65px;
 }
 
 .logo2030 {
     margin-right: 30px;
     height: 28px;
+}
+
+.logoNewYear {
+    animation: 10s infinite linear road;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: road;
+    -webkit-animation-duration: 10s;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    height: 27%;
+}
+
+@media (min-width: 992px) {
+    .logoNewYear {
+        animation: 15s infinite linear road;
+        -webkit-animation: linear infinite;
+        -webkit-animation-name: road;
+        -webkit-animation-duration: 15s;
+    }
+}
+
+@keyframes road {
+    0% {
+        left: -40%;
+    }
+    20% {
+        left: -40%;
+    }
+
+    100% {
+        left: 120%;
+    }
+}
+
+@-webkit-keyframes road {
+    0% {
+        left: -40%;
+    }
+    20% {
+        left: -40%;
+    }
+
+    100% {
+        left: 105%;
+    }
 }
 
 .main-img {
@@ -950,8 +999,9 @@ li {
     color: #005aaa;
     font-weight: 700;
 }
-@media (max-width: 767px){
-    header.underline__main{
+
+@media (max-width: 767px) {
+    header.underline__main {
         border-bottom: 2px solid #005aaa;
     }
 }
