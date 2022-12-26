@@ -9,13 +9,18 @@ body {
     will-change: reset;
 }
 
+header {
+    overflow: hidden;
+    position: relative;
+}
+
+header .navbar {
+    position: static;
+}
+
 a {
     color: #005aaa;
     text-decoration: none;
-}
-
-#page {
-    overflow: hidden;
 }
 
 .logo {
@@ -28,10 +33,10 @@ a {
 }
 
 .logoNewYear {
-    animation: 10s infinite linear road;
+    animation: 5s infinite linear road;
     -webkit-animation: linear infinite;
     -webkit-animation-name: road;
-    -webkit-animation-duration: 10s;
+    -webkit-animation-duration: 5s;
     position: absolute;
     bottom: 0;
     z-index: -1;
@@ -47,29 +52,40 @@ a {
     }
 }
 
+@media (min-width: 1920px) {
+    .logoNewYear {
+        animation: 20s infinite linear road;
+        -webkit-animation: linear infinite;
+        -webkit-animation-name: road;
+        -webkit-animation-duration: 20s;
+    }
+}
+
 @keyframes road {
     0% {
-        left: -40%;
+        left: -120px;
     }
-    20% {
-        left: -40%;
+
+    90% {
+        left: calc(100% + 120px);
     }
 
     100% {
-        left: 120%;
+        left: calc(100% + 120px);
     }
 }
 
 @-webkit-keyframes road {
     0% {
-        left: -40%;
+        left: -120px;
     }
-    20% {
-        left: -40%;
+
+    90% {
+        left: calc(100% + 120px);
     }
 
     100% {
-        left: 105%;
+        left: calc(100% + 120px);
     }
 }
 
