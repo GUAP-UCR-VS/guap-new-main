@@ -10,7 +10,8 @@ body {
 }
 
 header {
-    overflow: hidden;
+    overflow-x: clip;
+    -ms-overflow-x: clip;
     position: relative;
 }
 
