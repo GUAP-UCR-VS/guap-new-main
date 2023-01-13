@@ -1027,3 +1027,26 @@ li {
     display: none;
 }
 
+.mm-panel {
+    visibility: hidden;
+}
+
+.mm-panel--opened {
+    visibility: visible;
+}
+
+.mm-listitem--opened > .mm-panel {
+    visibility: visible;
+}
+
+.mm-menu--offcanvas.mm-menu--opened {
+    visibility: visible;
+}
+
+.mm-menu--offcanvas:not(.mm-menu--opened) {
+    visibility: hidden;
+}
+
+.mm-menu--offcanvas:not(.mm-menu--opened) * {
+    visibility: hidden;
+}
