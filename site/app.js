@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     "<a target=\"_blank\" href=\"https://t.me/new_guap\">\n" +
                     "                    <img src=\"https://src.guap.ru/_old/Files/logos/tlg_32.svg\" alt=\"telegram\">\n" +
                     "                </a>",
-                    "<a class=\"question-link\" href=\"#\">\n" +
+                    "<a class=\"question-link\" href=\"/faq\">\n" +
                     "                    <i class=\"fa fa-question-circle\"></i>\n" +
                     "                </a>"
                 ]
