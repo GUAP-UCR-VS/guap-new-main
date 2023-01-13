@@ -37,10 +37,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    new Swiper(".mySwiper2", {
+    new Swiper(".swiper-news", {
         spaceBetween: 30,
-        centeredSlides: true,
-        loop: true,
+        //centeredSlides: true,
+        loop: false,
         autoplay: {
             delay: 15000,
             disableOnInteraction: false,
